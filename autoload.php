@@ -3,7 +3,7 @@
 use Doctrine\Common\Annotations\AnnotationRegistry;
 
 $loader = require __DIR__ . '/app/vendor/autoload.php';
-
+//this file is not in /app/vendor/
 if (file_exists(__DIR__ . '/packages/autoload.php')) {
     $map = require __DIR__ . '/packages/composer/autoload_namespaces.php';
     foreach ($map as $namespace => $p) {
